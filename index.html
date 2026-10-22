@@ -17,8 +17,8 @@
 <a class="brand" href="#home" data-v="home">Dr. Sandra Geiger</a>
 <a href="#home" data-v="home">Home</a>
 <a href="#research" data-v="research">Research</a>
-<a href="#in-the-media" data-v="in-the-media">In the Media</a>
-<a href="#open-science" data-v="open-science">Open Science</a>
+<a href="#media" data-v="media">Media</a>
+<a href="#open-science" data-v="open-science">My Philosophy</a>
 <a href="#contact" data-v="contact">Contact</a>
 </nav>
 </header>
@@ -88,8 +88,8 @@
 </section>
 
 </div>
-<div class="view" id="v-in-the-media">
-<section><h2>In the media</h2><p class="note">
+<div class="view" id="v-media">
+<section><h2>Media</h2><p class="note">
 I enjoy doing research most when it leaves the journal and reaches people. This selection of articles and interviews shows my work in action, from how to talk about climate change to what our relationship with nature means for our health.
 
   
@@ -108,7 +108,9 @@ I enjoy doing research most when it leaves the journal and reaches people. This 
 <div class="view" id="v-contact">
 <section>
 <h2>Contact</h2>
-<p>For collaborations, media enquiries or speaking invitations, write to <a href="mailto:sandra.geiger@princeton.edu">sandra.geiger@princeton.edu</a>.</p>
+<p>Reach out at <a href="mailto:sandra.geiger@princeton.edu">sandra.geiger@princeton.edu</a>.</p>
+I enjoy collaborating across disciplines and cultures, and welcome idea for collaborations from <strong>researcher</strong> and <strong>students</strong>.
+I love talking about my work beyond academia. If you are planning a <strong>talk</strong> or working on a <strong>story</strong>, get in touch. I can speak about how psychology can spark sustainable action, and how time spent in nature supports our health and well-being.
 </section>
 
 </div>
@@ -116,7 +118,7 @@ I enjoy doing research most when it leaves the journal and reaches people. This 
 <footer>© 2026 Sandra Geiger | All Rights Reserved</footer>
 <script>
 (function(){
-var T={'home':'Home','research':'Research','in-the-media':'In the Media','open-science':'Open Science','teaching-philosophy':'Teaching Philosophy','contact':'Contact'};
+var T={'home':'Home','research':'Research','media':'Media','open-science':'Open Science','teaching-philosophy':'Teaching Philosophy','contact':'Contact'};
 function show(){
 var h=location.hash.slice(1);if(h==='publications')h='research';if(!T[h])h='home';
 document.querySelectorAll('.view').forEach(function(e){e.classList.toggle('on',e.id==='v-'+h)});
