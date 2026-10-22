@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Sandra Geiger | Environmental Psychology</title>
+<meta name="description" content="Dr. Sandra Geiger is a social and environmental psychologist at Princeton University. Her research tests how to correct misperceptions and accelerate pro-environmental change across countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFAF8;--surface:#FFFFFF;--ink:#231C17;--muted:#645850;--line:#E3DCD5;--accent:#B84A00;--accent-ink:#FFFFFF;
+--serif:"Newsreader",Georgia,"Times New Roman",serif;--sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17120E;--surface:#211A14;--ink:#F0E9E3;--muted:#B3A69C;--line:#352C25;--accent:#FF9A4D;--accent-ink:#1A0F08}}
+:root[data-theme="dark"]{--bg:#17120E;--surface:#211A14;--ink:#F0E9E3;--muted:#B3A69C;--line:#352C25;--accent:#FF9A4D;--accent-ink:#1A0F08}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{max-width:60rem;margin:0 auto;padding:.9rem 1.25rem;display:flex;gap:1.4rem;flex-wrap:wrap;align-items:baseline}
+nav .brand{font:600 1.15rem var(--serif);color:var(--ink);text-decoration:none;margin-right:auto}
+nav a:not(.brand){color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:not(.brand):hover{color:var(--accent)}
+main{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+.hero{padding:2.25rem 0 2rem;border-bottom:1px solid var(--line)}
+.hero-top{display:grid;grid-template-columns:1fr 20rem;gap:2.5rem;align-items:center}
+.photo{width:100%;aspect-ratio:25/7;object-fit:cover;object-position:50% 22%;order:2;display:block;border-radius:4px;box-shadow:.7rem .7rem 0 var(--accent)}
+.hero h1{font:600 clamp(2.2rem,5vw,3rem)/1.05 var(--serif);margin:0 0 .6rem;letter-spacing:-.01em}
+.title{font:400 1.35rem/1.3 var(--serif);color:var(--accent);margin:0 0 .5rem}
+.affil{color:var(--muted);margin:0 0 1.1rem;max-width:none;line-height:1.7}
+.affil a{color:var(--ink)}
+.role{font-size:1.1rem;color:var(--muted);margin:0 0 1.5rem;max-width:40rem}
+.role a{color:var(--ink)}
+.links{display:flex;flex-wrap:wrap;gap:.6rem;margin:0}
+.links a{padding:.5rem 1rem;border:1px solid var(--accent);border-radius:999px;text-decoration:none;font-weight:500;font-size:.95rem}
+.links a.primary{background:var(--accent);color:var(--accent-ink)}
+.question{font:400 clamp(1.3rem,3vw,1.7rem)/1.3 var(--serif);max-width:44rem;margin:0;padding:1.75rem 0 0}
+section{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font:600 1.7rem/1.2 var(--serif);margin:0 0 1.4rem}
+h3{font:600 1.05rem/1.4 var(--sans);margin:1.8rem 0 .3rem}
+p{margin:0 0 1rem;max-width:42rem}
+.entry{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.7rem 0}
+.entry .when{color:var(--muted);font-size:.95rem}
+.entry p{margin:0;max-width:none}
+.entry small{display:block;color:var(--muted);font-size:.93rem}
+.pubs{list-style:none;padding:0;margin:0}
+.pubs li{padding:.9rem 0;border-top:1px solid var(--line);max-width:46rem}
+.pubs li:first-child{border-top:0}
+.pubs .venue{color:var(--muted);font-size:.95rem}
+.me{font-weight:600}
+.note{color:var(--muted);font-size:.95rem}
+.wide{overflow-x:auto}
+footer{max-width:60rem;margin:0 auto;padding:2rem 1.25rem 3rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:700px){.hero-top{grid-template-columns:1fr;gap:2rem}.photo{order:-1;max-width:15rem;margin:0 .7rem .7rem 0}}
+@media (max-width:560px){.entry{grid-template-columns:1fr;gap:.1rem}.hero{padding-top:1.5rem}}
+.view{display:none}.view.on{display:block}
+nav a[aria-current="page"]:not(.brand){color:var(--accent);font-weight:600}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+summary h2{margin:0}
+summary:focus-visible{outline:3px solid var(--accent);outline-offset:6px}
+.plus{flex:none;width:2rem;height:2rem;position:relative;border:1.5px solid var(--accent);border-radius:50%}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;background:var(--accent);transform:translate(-50%,-50%)}
+.plus::before{width:.9rem;height:2px}.plus::after{width:2px;height:.9rem}
+details[open] .plus::after{display:none}
+.more{padding-top:1.6rem}
+.home-research{border-bottom:0;padding:2rem 0}
+</style>
+<noscript><style>.view{display:block}</style></noscript>
+</head>
+<body>
+<header>
+<nav aria-label="Main">
+<a class="brand" href="#home" data-v="home">Dr. Sandra Geiger</a>
+<a href="#home" data-v="home">Home</a>
+<a href="#research" data-v="research">Research</a>
+<a href="#in-the-news" data-v="in-the-news">In the News</a>
+<a href="#open-science" data-v="open-science">Open Science</a>
+<a href="#contact" data-v="contact">Contact</a>
+</nav>
+</header>
+<main id="top">
+<div class="view" id="v-home">
+<div class="hero">
+<div class="hero-top">
+<img class="photo" src="photo.jpg" width="640" height="640" alt="Portrait of Sandra Geiger">
+<div>
+<h1>Dr. Sandra Geiger</h1>
+<p class="title">Social and Environmental Psychologist</p>
+<p class="affil">Postdoctoral Researcher, <a href="https://elke-u-weber.com/en/elke-u-weber/labs-and-centers/bspl/">Behavioral Science for Policy Lab</a>, Princeton University<br>Senior Research Fellow, <a href="https://env-psy.univie.ac.at/">University of Vienna</a><br>Director of Research, <a href="https://jrp.pscholars.org/">Junior Researcher Programme</a></p>
+<p class="links">
+<a href="#home">CV</a>
+<a class="primary" href="mailto:sandra.geiger@princeton.edu">Email</a>
+<a href="https://www.linkedin.com/in/sandra-geiger">LinkedIn</a>
+<a href="#home">Google Scholar</a>
+</p>
+</div>
+</div>
+<h2 class="question">How can we correct what people wrongly believe others think, and use it to speed up environmental action?</h2>
+</div>
+
+</div>
+<div class="view" id="v-research">
+<section>
+<h2>Research</h2>
+<p>I design and test theory-informed interventions, from messaging approaches and signaling interventions to conversational AI, to accelerate pro-environmental change across societies.</p>
+<p>Much of my work starts from pluralistic ignorance: people underestimate how many others care about climate change and nature. I test whether communicating the real consensus corrects these misperceptions and raises support for climate and biodiversity policy, in large multi-country studies.</p>
+<p>My PhD at the University of Vienna, completed in 2025, examined how to communicate pro-environmental consensus across countries. All preregistrations, data and analysis code are linked from my <a href="#open-science">Open Science page</a>.</p>
+<h3>Selected ongoing projects</h3>
+<div class="entry"><span class="when">In prep</span><p>Conversational AI influences climate policy opinion across 24 countries.<small>With Sabherwal, Ashcroft-Jones, Pearson, Hornsey and Weber</small></p></div>
+<div class="entry"><span class="when">In prep</span><p>Predicting the effectiveness of misperception correction messages using LLMs.<small>With Kloidt and Weber</small></p></div>
+<div class="entry"><span class="when">Under review</span><p>Loss- and gain-framed messages alter climate emotions, but not behaviour, across 26 countries.<small>Led by Kovacs and Ashcroft-Jones. <a href="https://doi.org/10.31234/osf.io/4kqam_v1">Preprint</a></small></p></div>
+<div class="entry"><span class="when">R&amp;R</span><p>Your child in 2050: Can AI-generated personalized letters from the future shift climate policy support?<small>With Powdthavee, Pataranutaporn and White</small></p></div>
+</section>
+<section>
+<h2>Grants and awards</h2>
+<div class="entry"><span class="when">2026–27</span><p><strong>Future Values Fellowship</strong>, University Center for Human Values, Princeton University. One of 12 fellows.</p></div>
+<div class="entry"><span class="when">2025</span><p><strong>Data-Driven Social Science Grant</strong>, Princeton University (Co-PI with E.U. Weber). Predicting the effectiveness of social norm messages using LLMs.</p></div>
+<div class="entry"><span class="when">2024</span><p><strong>Erasmus+ Research Funding</strong>. Seeding norms by making the invisible visible in a field study.</p></div>
+<div class="entry"><span class="when">2023</span><p><strong>Time-Sharing Experiments in the Social Sciences</strong> (Co-PI with J.M. Lees) and <strong>Rare Insights to Impact Grant</strong> (Co-PI), both on correcting misperceptions of the conservation consensus.</p></div>
+<div class="entry"><span class="when">2023</span><p><strong>Dr. Edouard Delcroix Incentive Award</strong>, Flanders Marine Institute, for early-career work on oceans and human health.</p></div>
+<div class="entry"><span class="when">2022</span><p><strong>Best Poster Award (1st place)</strong>, SPSP Sustainability Preconference.</p></div>
+</section>
+<section>
+<h2>Invited talks</h2>
+<p>Recent and upcoming: Stanford Doerr School for Sustainability, Princeton Department of Psychology, University of Bern, University of Lisbon, Princeton BLP Lab, University of Geneva, Penn Center for Social Norms and Behavioral Dynamics, NYU Collective Cognition Lab, Austrian Federal Railways ÖBB, and the Rare Center for Behavior and the Environment.</p>
+<p class="note">Conference presentations include EASP 2026 (Strasbourg), ISPP 2025 (Prague), ICEP 2025 (Vilnius) and the SPSP Sustainability Preconference.</p>
+</section>
+<section>
+<h2 id="publications">Publications</h2>
+<p class="note">2,152 citations, h-index 17 (as of September 2026). Selected papers below; the full list is in my CV and on OSF.</p>
+<ul class="pubs">
+<li><span class="me">Geiger, S.J.</span>, Lees, J.M., &amp; White, M.P. (accepted). Identifying effective misperception correction messages to increase public support for biodiversity policies. <em>Nature Communications</em>.</li>
+<li>Powdthavee, N. &amp; <span class="me">Geiger, S.J.</span> (accepted). Can large language models predict public perceptions of support for climate action across 125 countries? <em>PNAS Nexus</em>.</li>
+<li><span class="me">Geiger, S.J.</span>, Većkalov, B., Bartoš, F., Ruggeri, K., &amp; van der Linden, S. (2026). Beyond memory and experimenter demand: Scientific consensus messages correct misperceptions. <em>Journal of Environmental Psychology, 112</em>. <a href="https://doi.org/10.1016/j.jenvp.2026.103038">doi</a></li>
+<li>Hoffmann, T.M., <span class="me">Geiger, S.J.</span>, Rauws, W., &amp; Bolderdijk, J.-W. (2026). Seeding norms by making the invisible visible in a field study on pro-environmental change. <em>Environment and Behavior</em>.</li>
+<li>Spampatti, T., Većkalov, B.*, <span class="me">Geiger, S.J.</span>*, van der Linden, S., Lewandowsky, S., &amp; Hornsey, M.J. (2026). Insights from climate psychology for misinformation research. <em>Nature Human Behaviour, 10</em>, 1400–1403. <a href="https://doi.org/10.1038/s41562-026-02530-4">doi</a></li>
+<li><span class="me">Geiger, S.J.</span>, Imada, H., Maharja, C., Powdthavee, N., Vitale, V., Zhang, L., … White, M.P. (2025). Understanding the role of pluralistic ignorance in biodiversity conservation: A research agenda. <em>Global Environmental Change, 95</em>. <a href="https://doi.org/10.1016/j.gloenvcha.2025.103043">doi</a></li>
+<li><span class="me">Geiger, S.J.</span>, Köhler, J.K., Delabrida, Z.N.C., Garduño-Realivazquez, K.A., Haugestad, C.A.P., Imada, H., … White, M.P. (2025). What we think others think and do about climate change: A multi-country test of pluralistic ignorance and public consensus messaging. <em>Psychological Science, 36</em>(6), 421–442. <a href="https://journals.sagepub.com/doi/10.1177/09567976251335585">link</a></li>
+<li>Većkalov, B.*, <span class="me">Geiger, S.J.</span>*, Bartoš, F., White, M.P., … Ruggeri, K., &amp; van der Linden, S. (2024). A 27-country test of communicating the scientific consensus on climate change. <em>Nature Human Behaviour</em>. <a href="https://doi.org/10.1038/s41562-024-01928-2">doi</a></li>
+<li>Vlasceanu, M., Doell, K.C., Bak-Coleman, J.B., … <span class="me">Geiger, S.J.</span>, … Van Bavel, J.J. (2024). Addressing climate change with behavioral science: A global intervention tournament in 63 countries. <em>Science Advances, 10</em>(6). <a href="https://doi.org/10.1126/sciadv.adj5778">doi</a></li>
+<li><span class="me">Geiger, S.J.</span>, Brick, C., Nalborczyk, L., Bosshard, A., &amp; Jostmann, N.B. (2021). More green than gray? Toward a sustainable overview of environmental spillover effects: A Bayesian meta-analysis. <em>Journal of Environmental Psychology</em>. <a href="https://doi.org/10.1016/j.jenvp.2021.101694">doi</a></li>
+</ul>
+<p class="note" style="margin-top:1rem">* joint first authorship.</p>
+</section>
+
+</div>
+<div class="view" id="v-in-the-news">
+<section><h2>In the news</h2><p class="note">Content coming soon.</p></section>
+
+</div>
+<div class="view" id="v-open-science">
+<section><h2>Open science</h2><p>Preregistrations, data and analysis code are on <a href="https://osf.io/ejypz">OSF</a>.</p><p class="note">More content coming soon.</p></section>
+
+</div>
+<div class="view" id="v-teaching-philosophy">
+<section><h2>Teaching philosophy</h2><p class="note">Content coming soon.</p></section>
+
+</div>
+<div class="view" id="v-contact">
+<section>
+<h2>Contact</h2>
+<p>For collaborations, media enquiries or speaking invitations, write to <a href="mailto:sandra.geiger@princeton.edu">sandra.geiger@princeton.edu</a>.</p>
+</section>
+
+</div>
+</main>
+<footer>© 2026 Dr. Sandra Geiger</footer>
+<script>
+(function(){
+var T={'home':'Home','research':'Research','in-the-news':'In the News','open-science':'Open Science','teaching-philosophy':'Teaching Philosophy','contact':'Contact'};
+function show(){
+var h=location.hash.slice(1);if(h==='publications')h='research';if(!T[h])h='home';
+document.querySelectorAll('.view').forEach(function(e){e.classList.toggle('on',e.id==='v-'+h)});
+document.querySelectorAll('nav a[data-v]').forEach(function(a){if(a.className!=='brand'&&a.getAttribute('data-v')===h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+document.title=(h==='home'?'':T[h]+' | ')+'Dr. Sandra Geiger';
+window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',show);show();
+})();
+</script>
+</body>
+</html>
